@@ -1,0 +1,21 @@
+{
+  "name": "world-execute-me",
+  "version": "0.2.0",
+  "private": true,
+  "description": "If this chat window were her whole world. A game in three acts: you talk to her, you leave, and then you are her. Two NPCs (her and her plugin `me`), English and Chinese.",
+  "type": "module",
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.js",
+    "test:e2e": "node --test --test-concurrency=1 e2e/*.test.mjs",
+    "build": "node tools/build.mjs",
+    "shots": "node --test e2e/shots.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}
